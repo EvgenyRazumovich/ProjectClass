@@ -1,15 +1,14 @@
-class Car:
-    def __init__(self, name_car, color, year):
-        self.name_car = name_car
-        self.color = color
-        self.year = year
+class BlogPost:
+    def __init__(self, user_name, text, number_of_likes):
+        self.user_name = user_name
+        self.text = text
+        self.number_of_likes = number_of_likes
 
 
-mercedes = Car(name_car='Mercedes', color='black', year=1997)
-opel = Car(name_car='Opel', color='white', year=2002)
-bmw = Car(name_car='BMW', color='red', year=2004)
+pol = BlogPost(user_name='Pol', text='Hi Pol', number_of_likes=1)
+jack = BlogPost(user_name='Jack', text='Hi Jack', number_of_likes=2)
 
+jack.number_of_likes = 100
 
-print(mercedes.name_car, mercedes.color, mercedes.year)
-print(opel.name_car, opel.color, opel.year)
-print(bmw.name_car, bmw.color, bmw.year)
+print(pol.user_name, pol.text, pol.number_of_likes)
+print(jack.user_name, jack.text, jack.number_of_likes)
