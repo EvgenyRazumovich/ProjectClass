@@ -1,14 +1,22 @@
-class BlogPost:
-    def __init__(self, user_name, text, number_of_likes):
-        self.user_name = user_name
-        self.text = text
-        self.number_of_likes = number_of_likes
+class Car:
+    wheels_number = 4
+
+    def __init__(self, name, color, year, is_crashed):
+        self.name = name
+        self.color = color
+        self.year = year
+        self.is_crashed = is_crashed
+
+    def drive(self, city, km):
+        print(self.name + ' Car is driving ' + city + ' ' + km)
+
+    def chang_color(self, new_color):
+        self.color = new_color
 
 
-pol = BlogPost(user_name='Pol', text='Hi Pol', number_of_likes=1)
-jack = BlogPost(user_name='Jack', text='Hi Jack', number_of_likes=2)
-
-jack.number_of_likes = 100
-
-print(pol.user_name, pol.text, pol.number_of_likes)
-print(jack.user_name, jack.text, jack.number_of_likes)
+opel = Car('Opel', 'red', 1999, True)
+opel.drive('Borisov', '15')
+bmw = Car('bmw', 'black', 2003, False )
+bmw.drive('Zhodino', '3')
+bmw.chang_color('yellow')
+print(bmw.color)
