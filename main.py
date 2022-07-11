@@ -1,18 +1,10 @@
-class Chain:
-    def __init__(self, number_of_items):
-        self.number_of_items = number_of_items
+import math
 
-    def __str__(self):
-        return 'Chain with ' + str(self.number_of_items) + ' items'
+cor = math.sqrt(123456789)
+print('Корень квадратный из числа ' + str(123456789) + ' равно ' + str(cor))
 
-    def __len__(self):
-        return self.number_of_items
+fac_num = math.factorial(987)
+print('Факториал числа ' + str(987) + ' равно ' + str(fac_num))
 
-
-jake = Chain(20)
-
-print(jake)
-
-print(len(jake))
-
-
+e_num = math.pow(876, 54)
+print(str(876) + ' в степени ' + str(54) + ' равно ' + str(e_num))
